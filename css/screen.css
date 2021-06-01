@@ -22,10 +22,6 @@
   padding: 1rem;
 }
 
-.c-nav li :active {
-  color: #E0D07C;
-}
-
 .c-nav a {
   padding: .5em .8em;
   color: rgba(255, 255, 255, 0.589);
@@ -117,7 +113,7 @@
 
 .c-search__btn--icon {
   font-size: 1.25rem;
-  padding: 0;
+  padding-left: 1rem;
   color: #E0D07C;
 }
 
@@ -170,7 +166,8 @@
 }
 
 .c-over--img {
-  width: 60vh;
+  padding-top: 0.5rem;
+  width: 57.6vh;
 }
 
 .c-enkelesprekers {
@@ -199,7 +196,7 @@
 }
 
 .text-block:hover {
-  background-color: rgba(224, 207, 123, 0.5);
+  background-color: rgba(224, 207, 123, 0.55);
   cursor: pointer;
 }
 
@@ -211,6 +208,14 @@ footer {
 
 footer h4 {
   color: #E0D07C;
+}
+
+footer i {
+  color: white;
+}
+
+footer img {
+  width: 3rem;
 }
 
 .footer__nav--link {
