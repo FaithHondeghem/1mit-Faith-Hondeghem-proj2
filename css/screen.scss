@@ -23,9 +23,6 @@ $kleur-accent--hover: #FFF0A1;
     list-style: outside none none;
     margin: .5em 0.5em;
     padding: 1rem;
-    :active {
-        color: $kleur-accent;
-    }
   }
   
   .c-nav a {
@@ -79,6 +76,8 @@ $kleur-accent--hover: #FFF0A1;
   }
 
 
+
+
   /*zoekveld*/
   .c-search {
     display: inline-flex;
@@ -109,7 +108,7 @@ $kleur-accent--hover: #FFF0A1;
       width: 25%;
       &--icon {
         font-size: 1.25rem;
-        padding: 0;
+        padding-left: 1rem;
         color: $kleur-accent;  
       }
     }
@@ -158,7 +157,8 @@ $kleur-accent--hover: #FFF0A1;
     padding: 2rem;
 
     &--img {
-      width: 60vh;
+      padding-top: 0.5rem;
+      width: 57.6vh;
     }
   }
 
@@ -188,7 +188,7 @@ $kleur-accent--hover: #FFF0A1;
   }
 
   .text-block:hover {
-    background-color: rgba(224, 207, 123, 0.5);
+    background-color: rgba(224, 207, 123, 0.55);
     cursor: pointer;
   }
 
@@ -199,6 +199,14 @@ $kleur-accent--hover: #FFF0A1;
 
     h4 {
       color: $kleur-accent;
+    }
+
+    i {
+        color: white;
+    }
+
+    img {
+        width: 3rem;
     }
   }
 
@@ -218,6 +226,7 @@ $kleur-accent--hover: #FFF0A1;
 
   .c-footer {
       text-align: center;
+      
       li {
           text-align: left;
       }
