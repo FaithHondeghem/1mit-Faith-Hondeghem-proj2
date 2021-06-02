@@ -3,6 +3,7 @@ $kleur-secondary--hover: #63898F;
 $kleur-accent: #E0D07C;
 $kleur-accent--hover: #FFF0A1;
 
+ /*nav*/
 .c-nav {
     font-family: interstate, sans-serif;
     font-style: normal;
@@ -22,7 +23,7 @@ $kleur-accent--hover: #FFF0A1;
     display: inline-block;
     list-style: outside none none;
     margin: .5em 0.5em;
-    padding: 1rem;
+    padding: 0.5rem;
   }
   
   .c-nav a {
@@ -75,9 +76,6 @@ $kleur-accent--hover: #FFF0A1;
     color: $kleur-accent--hover;
   }
 
-
-
-
   /*zoekveld*/
   .c-search {
     display: inline-flex;
@@ -86,13 +84,13 @@ $kleur-accent--hover: #FFF0A1;
     border: 2px solid $kleur-accent;
     border-radius: 0.25rem;
     overflow: hidden;
+    margin-right: 5rem;
   
     &__txt {
       font-family: interstate, sans-serif;
       font-style: italic;
       font-weight: 50;
       font-size: 12pt;
-      padding: 10px;
       width: 75%;
       border-top: none;
       border-left: none;
@@ -115,7 +113,6 @@ $kleur-accent--hover: #FFF0A1;
   
     &__btn:hover {
       border: none;
-      background-color: $kleur-accent;
       color: white;
     }
     
@@ -128,10 +125,13 @@ $kleur-accent--hover: #FFF0A1;
   }
 
   /*carousel*/
+  @media only screen and (min-width: 1140px) {
   .carousel-inner {
-    height: 80vh;
+      height: 80vh;
+  }
   }
 
+  /*welkom*/
   .c-welkom {
     padding: 0.5rem;
     display: flex;
@@ -153,6 +153,7 @@ $kleur-accent--hover: #FFF0A1;
     }
   }
 
+  /*over*/
   .c-over {
     padding: 2rem;
 
@@ -162,12 +163,17 @@ $kleur-accent--hover: #FFF0A1;
     }
   }
 
+  /*enkele sprekers*/
   .c-enkelesprekers {
     position: relative;
     padding-bottom: 3rem;
     
     &--titel {
       padding: 1.5rem;
+    }
+
+    img {
+        box-shadow: 0.5px 0.5px 0.5rem gray;
     }
   }
   
@@ -181,6 +187,7 @@ $kleur-accent--hover: #FFF0A1;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
+    box-shadow: 0.5px 0.5px 2rem grey;
 
     h3 {
       padding-top: 55%;
@@ -192,22 +199,269 @@ $kleur-accent--hover: #FFF0A1;
     cursor: pointer;
   }
 
+  /*sorteerbalk*/
+  .c-sort {
+      margin-top: 4rem;
+      padding: 1rem;
+      background-color: $kleur-accent;
+      text-transform: uppercase;
+      color: white;
+      box-shadow: 0.5px 0.5px 0.2rem grey;
+
+      &__text {
+          padding-top: 0.4rem;
+          padding-right: 1rem;
+      }
+
+      .c-btn {
+          padding-left: 1rem;
+          padding-right: 1rem;
+          padding-top: 0.2rem;
+          padding-bottom: 0.2rem;
+          margin: 2px;
+          border: none;
+          background: transparent;
+          text-transform: uppercase;
+          color: white;
+          font-family: interstate, sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18pt;
+      }
+
+      .active, .c-btn:hover {
+          margin: 0;
+          color: white;
+          text-decoration: none;
+          border: 2px solid white;
+      }
+
+  }
+
+  /*speakercard*/
+  
+  .card {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 2px 5px 1rem black;
+    background-color: $kleur-secondary;
+    color: white;
+
+    @media only screen and (max-width: 767px) {
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+  }
+  
+  .card-img-top {
+    width: 20rem;
+    border-radius: 0.5rem;
+  }
+  
+  .card-block__text {
+    position: absolute;
+    width: 80%;
+    height: 36%;
+    bottom: 55%;
+    right: 10%;
+    border-radius: 0.5rem;
+    background-color: rgba(224, 207, 123, 0.35);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0.5px 0.5px 1rem gray;
+  }
+  
+  
+  .card-text {
+    text-align: left;
+    padding-top: 2rem;
+    font-family: interstate, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 12pt;
+  }
+
+  .card-p {
+    padding-top: 2rem;
+    font-family: interstate, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14pt;
+  }
+  
+  .inline {
+    display:inline-block;
+     margin-right:px;
+  }
+  
+  .c-like__btn {
+    background: transparent;
+    border: none;
+    color: $kleur-accent;
+    font-size: 2rem;
+  }
+  
+  .card-btn {
+    color: $kleur-accent;
+    margin-left: 12rem;
+  }
+  
+  .card-btn:before,
+  .card-btn:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: $kleur-accent;
+    transition: all 0.3s ease;
+   
+  }
+  
+  .card-btn span:before,
+  .card-btn span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: $kleur-accent;
+    transition: all 0.3s ease;
+  }
+
+  .custom-btn {
+    padding: 10px 25px;
+    font-family: interstate, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14pt;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    color: $kleur-accent;
+    margin: 1rem;
+  }
+  
+  button {
+    margin: 20px;
+  }
+  
+  .btn-4 {
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .btn-4 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-4:before,
+  .btn-4:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: $kleur-accent;
+    transition: all 0.3s ease;
+   
+  }
+  .btn-4:before {
+    height: 50%;
+    width: 2px;
+  
+  }
+  .btn-4:after {
+    width: 20%;
+    height: 2px;
+  }
+  .btn-4:hover:before {
+    height: 100%;
+  }
+  .btn-4:hover:after {
+    width: 100%;
+  }
+  .btn-4 span:before,
+  .btn-4 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: $kleur-accent;
+    transition: all 0.3s ease;
+  }
+  .btn-4 span:before {
+    width: 2px;
+    height: 50%;
+  }
+  .btn-4 span:after {
+    width: 20%;
+    height: 2px;
+  }
+  .btn-4 span:hover:before {
+    height: 100%;
+  }
+  .btn-4 span:hover:after {
+    width: 100%;
+  }
+  
+ /*paging*/
+ .pagination {
+    display: inline-block;
+    padding: 2rem;
+    font-family: interstate, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14pt;
+     
+    }
+
+    li.page-item {
+        display: inline;
+     a {
+        color: $kleur-secondary;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        border: none;
+        &:hover {
+            background: transparent; 
+            border: 2px solid $kleur-secondary--hover;
+            color: $kleur-secondary--hover;
+        }
+    }
+
+  }
+
+/*footer*/
   footer {
     position: relative;
     padding: 2rem;
+    list-style-type: none;
     background-color: $kleur-secondary;
 
     h4 {
       color: $kleur-accent;
     }
 
-    i {
-        color: white;
-    }
-
     img {
         width: 3rem;
     }
+  }
+
+  .footer__nav--item {
+    list-style-type: none;
+  }
+
+  .footer__i {
+      color: white;
+      padding-top: 5rem;
   }
 
   .footer__nav--link {

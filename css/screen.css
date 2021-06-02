@@ -1,3 +1,4 @@
+/*nav*/
 .c-nav {
   font-family: interstate, sans-serif;
   font-style: normal;
@@ -19,7 +20,7 @@
   display: inline-block;
   list-style: outside none none;
   margin: .5em 0.5em;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .c-nav a {
@@ -88,6 +89,7 @@
   border: 2px solid #E0D07C;
   border-radius: 0.25rem;
   overflow: hidden;
+  margin-right: 5rem;
 }
 
 .c-search__txt {
@@ -95,7 +97,6 @@
   font-style: italic;
   font-weight: 50;
   font-size: 12pt;
-  padding: 10px;
   width: 75%;
   border-top: none;
   border-left: none;
@@ -119,7 +120,6 @@
 
 .c-search__btn:hover {
   border: none;
-  background-color: #E0D07C;
   color: white;
 }
 
@@ -130,10 +130,13 @@
 }
 
 /*carousel*/
-.carousel-inner {
-  height: 80vh;
+@media only screen and (min-width: 1140px) {
+  .carousel-inner {
+    height: 80vh;
+  }
 }
 
+/*welkom*/
 .c-welkom {
   padding: 0.5rem;
   display: -webkit-box;
@@ -161,6 +164,7 @@
   float: right;
 }
 
+/*over*/
 .c-over {
   padding: 2rem;
 }
@@ -170,6 +174,7 @@
   width: 57.6vh;
 }
 
+/*enkele sprekers*/
 .c-enkelesprekers {
   position: relative;
   padding-bottom: 3rem;
@@ -177,6 +182,11 @@
 
 .c-enkelesprekers--titel {
   padding: 1.5rem;
+}
+
+.c-enkelesprekers img {
+  -webkit-box-shadow: 0.5px 0.5px 0.5rem gray;
+          box-shadow: 0.5px 0.5px 0.5rem gray;
 }
 
 .text-block {
@@ -189,6 +199,8 @@
   color: white;
   padding-left: 20px;
   padding-right: 20px;
+  -webkit-box-shadow: 0.5px 0.5px 2rem grey;
+          box-shadow: 0.5px 0.5px 2rem grey;
 }
 
 .text-block h3 {
@@ -200,9 +212,266 @@
   cursor: pointer;
 }
 
+/*sorteerbalk*/
+.c-sort {
+  margin-top: 4rem;
+  padding: 1rem;
+  background-color: #E0D07C;
+  text-transform: uppercase;
+  color: white;
+  -webkit-box-shadow: 0.5px 0.5px 0.2rem grey;
+          box-shadow: 0.5px 0.5px 0.2rem grey;
+}
+
+.c-sort__text {
+  padding-top: 0.4rem;
+  padding-right: 1rem;
+}
+
+.c-sort .c-btn {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  margin: 2px;
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+  color: white;
+  font-family: interstate, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18pt;
+}
+
+.c-sort .active, .c-sort .c-btn:hover {
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+}
+
+/*speakercard*/
+.card {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 2px 5px 1rem black;
+          box-shadow: 2px 5px 1rem black;
+  background-color: #022329;
+  color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .card {
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.card-img-top {
+  width: 20rem;
+  border-radius: 0.5rem;
+}
+
+.card-block__text {
+  position: absolute;
+  width: 80%;
+  height: 36%;
+  bottom: 55%;
+  right: 10%;
+  border-radius: 0.5rem;
+  background-color: rgba(224, 207, 123, 0.35);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-box-shadow: 0.5px 0.5px 1rem gray;
+          box-shadow: 0.5px 0.5px 1rem gray;
+}
+
+.card-text {
+  text-align: left;
+  padding-top: 2rem;
+  font-family: interstate, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 12pt;
+}
+
+.card-p {
+  padding-top: 2rem;
+  font-family: interstate, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14pt;
+}
+
+.inline {
+  display: inline-block;
+  margin-right: px;
+}
+
+.c-like__btn {
+  background: transparent;
+  border: none;
+  color: #E0D07C;
+  font-size: 2rem;
+}
+
+.card-btn {
+  color: #E0D07C;
+  margin-left: 12rem;
+}
+
+.card-btn:before,
+.card-btn:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #E0D07C;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.card-btn span:before,
+.card-btn span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: #E0D07C;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.custom-btn {
+  padding: 10px 25px;
+  font-family: interstate, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14pt;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  color: #E0D07C;
+  margin: 1rem;
+}
+
+button {
+  margin: 20px;
+}
+
+.btn-4 {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+.btn-4 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-4:before,
+.btn-4:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #E0D07C;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-4:before {
+  height: 50%;
+  width: 2px;
+}
+
+.btn-4:after {
+  width: 20%;
+  height: 2px;
+}
+
+.btn-4:hover:before {
+  height: 100%;
+}
+
+.btn-4:hover:after {
+  width: 100%;
+}
+
+.btn-4 span:before,
+.btn-4 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: #E0D07C;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-4 span:before {
+  width: 2px;
+  height: 50%;
+}
+
+.btn-4 span:after {
+  width: 20%;
+  height: 2px;
+}
+
+.btn-4 span:hover:before {
+  height: 100%;
+}
+
+.btn-4 span:hover:after {
+  width: 100%;
+}
+
+/*paging*/
+.pagination {
+  display: inline-block;
+  padding: 2rem;
+  font-family: interstate, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14pt;
+}
+
+li.page-item {
+  display: inline;
+}
+
+li.page-item a {
+  color: #022329;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: none;
+}
+
+li.page-item a:hover {
+  background: transparent;
+  border: 2px solid #63898F;
+  color: #63898F;
+}
+
+/*footer*/
 footer {
   position: relative;
   padding: 2rem;
+  list-style-type: none;
   background-color: #022329;
 }
 
@@ -210,12 +479,17 @@ footer h4 {
   color: #E0D07C;
 }
 
-footer i {
-  color: white;
-}
-
 footer img {
   width: 3rem;
+}
+
+.footer__nav--item {
+  list-style-type: none;
+}
+
+.footer__i {
+  color: white;
+  padding-top: 5rem;
 }
 
 .footer__nav--link {
