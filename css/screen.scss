@@ -3,6 +3,35 @@ $kleur-secondary--hover: #63898F;
 $kleur-accent: #E0D07C;
 $kleur-accent--hover: #FFF0A1;
 
+ /*lettertypes*/
+ h1 {
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600; 
+    font-size: 24pt;  
+  }
+
+  h2 {
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600; 
+    font-size: 22pt;  
+  }
+
+  h3 {
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600; 
+    font-size: 20pt;  
+  }
+
+  h4 {
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600; 
+    font-size: 18pt;  
+  }
+
  /*nav*/
 .c-nav {
     font-family: interstate, sans-serif;
@@ -147,7 +176,7 @@ $kleur-accent--hover: #FFF0A1;
       padding-left: 0.2rem;
       font-family: montserrat, sans-serif;
       font-style: normal;
-      font-weight: 100;
+      font-weight: 600;
       font-size: 22pt;
       float: right;
     }
@@ -209,7 +238,7 @@ $kleur-accent--hover: #FFF0A1;
       box-shadow: 0.5px 0.5px 0.2rem grey;
 
       &__text {
-          padding-top: 0.4rem;
+          padding-top: 0.5rem;
           padding-right: 1rem;
       }
 
@@ -437,6 +466,72 @@ $kleur-accent--hover: #FFF0A1;
         }
     }
 
+  }
+
+  /*table*/
+  .c-table {
+      margin: auto;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 5px 5px 1rem #f0f0f0;
+
+      &--titel {
+          background-color: $kleur-secondary;
+          padding: 1.5rem;
+          padding-left: 1rem;
+          font-family: montserrat, sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16pt;
+          color: white;
+      }
+
+      &--row {
+          cursor: pointer;
+          font-family: interstate, sans-serif;
+          font-style: normal;
+          font-weight: 100;
+          font-size: 14pt;
+          &:hover{
+          background-color: rgba(98, 136, 141, 0.5);
+          color: white;
+        }
+      }
+
+      &--row:nth-child(even) {
+          background-color: #f9f9f9;
+          &:hover {
+            background-color: rgba(98, 136, 141, 0.5);
+            color: white;
+          }
+      }
+  }
+
+  /*sponsors*/
+  .c-sponsor {
+      margin-bottom: 2rem;
+      h1 {
+          margin: 1rem;
+      }
+
+      h2 {
+          margin-top: 4rem;
+          margin-bottom: 2rem;
+          @media only screen and (max-width: 1140px) {
+              text-align: center;
+          }
+      }
+
+      &--img {
+          padding-top: 2rem;
+      }
+
+      @media only screen and (max-width: 1140px) {
+          &--img {
+              padding-top: 2rem;
+              padding-bottom: 2rem;
+          }
+      }
   }
 
 /*footer*/

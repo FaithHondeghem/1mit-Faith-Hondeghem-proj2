@@ -1,3 +1,32 @@
+/*lettertypes*/
+h1 {
+  font-family: montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24pt;
+}
+
+h2 {
+  font-family: montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22pt;
+}
+
+h3 {
+  font-family: montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20pt;
+}
+
+h4 {
+  font-family: montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18pt;
+}
+
 /*nav*/
 .c-nav {
   font-family: interstate, sans-serif;
@@ -159,7 +188,7 @@
   padding-left: 0.2rem;
   font-family: montserrat, sans-serif;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 600;
   font-size: 22pt;
   float: right;
 }
@@ -224,7 +253,7 @@
 }
 
 .c-sort__text {
-  padding-top: 0.4rem;
+  padding-top: 0.5rem;
   padding-right: 1rem;
 }
 
@@ -465,6 +494,79 @@ li.page-item a:hover {
   background: transparent;
   border: 2px solid #63898F;
   color: #63898F;
+}
+
+/*table*/
+.c-table {
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 5px 5px 1rem #f0f0f0;
+          box-shadow: 5px 5px 1rem #f0f0f0;
+}
+
+.c-table--titel {
+  background-color: #022329;
+  padding: 1.5rem;
+  padding-left: 1rem;
+  font-family: montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16pt;
+  color: white;
+}
+
+.c-table--row {
+  cursor: pointer;
+  font-family: interstate, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14pt;
+}
+
+.c-table--row:hover {
+  background-color: rgba(98, 136, 141, 0.5);
+  color: white;
+}
+
+.c-table--row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.c-table--row:nth-child(even):hover {
+  background-color: rgba(98, 136, 141, 0.5);
+  color: white;
+}
+
+/*sponsors*/
+.c-sponsor {
+  margin-bottom: 2rem;
+}
+
+.c-sponsor h1 {
+  margin: 1rem;
+}
+
+.c-sponsor h2 {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 1140px) {
+  .c-sponsor h2 {
+    text-align: center;
+  }
+}
+
+.c-sponsor--img {
+  padding-top: 2rem;
+}
+
+@media only screen and (max-width: 1140px) {
+  .c-sponsor--img {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
 /*footer*/
