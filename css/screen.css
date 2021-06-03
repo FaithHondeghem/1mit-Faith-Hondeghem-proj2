@@ -27,6 +27,20 @@ h4 {
   font-size: 18pt;
 }
 
+h5 {
+  font-family: montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16pt;
+}
+
+p {
+  font-family: interstate, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14pt;
+}
+
 /*nav*/
 .c-nav {
   font-family: interstate, sans-serif;
@@ -198,9 +212,9 @@ h4 {
   padding: 2rem;
 }
 
-.c-over--img {
+.c-over img {
+  width: 100%;
   padding-top: 0.5rem;
-  width: 57.6vh;
 }
 
 /*enkele sprekers*/
@@ -496,6 +510,66 @@ li.page-item a:hover {
   color: #63898F;
 }
 
+/*spreker detail*/
+.c-sprekerdetail {
+  margin-top: 5rem;
+}
+
+.c-sprekerdetail img {
+  width: 100%;
+}
+
+.c-sprekerdetail h4 {
+  padding-top: 2rem;
+}
+
+.c-sprekerdetail p {
+  padding-top: 1.5rem;
+}
+
+.c-sprekerdetail a {
+  color: #022329;
+  padding: 0.2rem;
+}
+
+.c-sprekerdetail a:hover {
+  color: #63898F;
+}
+
+.c-sprekerdetail button {
+  color: #022329;
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+/*session detail*/
+.c-sessiondetail {
+  margin-top: 5rem;
+}
+
+.c-sessiondetail img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.c-sessiondetail h3 {
+  padding-top: 1rem;
+}
+
+.c-sessiondetail h5 {
+  padding-top: 3rem;
+}
+
+.c-sessiondetail a {
+  color: #022329;
+  padding-top: 0;
+  padding-left: 0.2rem;
+}
+
+.c-sessiondetail a:hover {
+  color: #63898F;
+}
+
 /*table*/
 .c-table {
   margin: auto;
@@ -583,6 +657,11 @@ li.page-item a:hover {
   .c-tickets h1 {
     text-align: center;
   }
+}
+
+.c-tickets--img {
+  padding: 2rem;
+  width: 100%;
 }
 
 .c-tickets--label {
@@ -793,6 +872,7 @@ li.page-item a:hover {
 }
 
 .c-contact--input {
+  width: 100%;
   padding: 5px;
   border: 2px solid #022329;
   border-radius: 0.15rem;
