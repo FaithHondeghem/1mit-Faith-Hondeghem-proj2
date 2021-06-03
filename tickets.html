@@ -30,8 +30,8 @@
             <li class="c-nav--item">
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="c-nav--item active">
-              <a class="nav-link active" href="sprekers.html">Sprekers</a>
+            <li class="c-nav--item">
+              <a class="nav-link" href="sprekers.html">Sprekers</a>
             </li>
             <li class="c-nav--item">
               <a class="nav-link" href="planning.html">Planning</a>
@@ -39,7 +39,7 @@
             <li class="c-nav--item">
               <a class="nav-link" href="sponsors.html">Sponsors</a>
             </li>
-            <li class="c-nav--item">
+            <li class="c-nav--item active">
               <a class="nav-link" href="tickets.html">Tickets</a>
             </li>
             <li class="c-nav--item">
@@ -54,6 +54,80 @@
       </nav>
     </header>
     <main>
+      <div class="container">
+        <div class="c-tickets">
+          <h1>Bestel hier uw tickets.</h1>
+          <form action="" class="c-tickets">
+            <div class="row">
+              <div class="col-lg-6 col-sm-12">
+                <form>
+                  <label class="c-tickets--label" for="voornaam">Voornaam</label><br>
+                  <input class="c-tickets--input" type="text" id="voornaam" name="voornaam" placeholder="Voornaam"><br>
+                </form>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <form>
+                  <label class="c-tickets--label" for="naam">Naam</label><br>
+                  <input class="c-tickets--input" type="text" id="naam" name="naam" placeholder="Naam"><br>
+                </form>
+              </div>
+            </div>
+            <form>
+              <label class="c-tickets--label" for="postcode">Postcode</label><br>
+              <input class="c-tickets--input" type="text" id="postcode" name="postcode" placeholder="Postcode"><br>
+            </form>
+            <form>
+              <label class="c-tickets--label" for="email">Email</label><br>
+              <input class="c-tickets--input mb-5" type="email" id="email" name="email" placeholder="Email"><br>
+            </form>
+            <div class="c-tickets--aantal">
+                <div class="row pb-3">
+                    <div class="col-6">
+                        <h5>Type</h2>
+                    </div>
+                    <div class="col-6">
+                        <h5>Amount</h2>                        
+                    </div>
+                </div>
+                <div class="row pb-3">
+                    <div class="col-6">
+                        <label class="form-label" for="earlybird">Early Bird (€30,00)</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="number" class="c-tickets--input" name="earlybird" id="earlybird" value="0" min="0" placeholder="0" />
+                    </div>
+                </div>
+                <div class="row pb-3">
+                    <div class="col-6">
+                        <label class="form-label" for="regular">Regular (€45,00)</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="number" class="c-tickets--input" name="regular" id="regular" value="0" min="0" placeholder="0" />
+                    </div>
+                </div>
+
+                <div class="row pb-3">
+                    <div class="col-6">
+                        <label class="form-label" for="student">Student (€15,00)</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="number" class="c-tickets--input" name="student" id="student" value="0" min="0" placeholder="0" />
+                    </div>
+                </div>
+              
+                <div class="row pb-3">
+                    <div class="col-6">
+                        <label class="form-label" for="vip">VIP (€60,00)</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="number" class="c-tickets--input" name="vip" id="vip" value="0" min="0" placeholder="0" />
+                    </div>
+                </div>
+            </div>
+            <button href="#" class="custom-btn btn-4 card-btn inline"><span>Bestel nu <i class="fas fa-chevron-right"></i></span></button>
+          </form>
+        </div>
+      </div>
     </main>
     <footer>
         <div class="container">
@@ -73,8 +147,8 @@
             <div class="row">
               <div class="col-lg-4 col-sm-12 order-lg-5 order-sm-2 order-xs-2">
                 <ul class="footer__nav">
-                  <li class="footer__nav active">
-                    <a class="footer__nav--link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <li class="footer__nav">
+                    <a class="footer__nav--link" href="index.html">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="footer__nav--item">
                     <a class="footer__nav--link" href="#">Sprekers</a>

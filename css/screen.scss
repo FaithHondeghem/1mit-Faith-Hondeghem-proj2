@@ -534,6 +534,337 @@ $kleur-accent--hover: #FFF0A1;
       }
   }
 
+  /*tickets*/
+  .c-tickets {
+      display: inline-block;
+      color: $kleur-secondary;
+      h1 {
+          margin-top: 2rem;
+          @media only screen and (max-width: 1140px) {
+            text-align: center;
+          }
+      }
+
+        &--label {
+          margin-top: 2rem;
+          font-family: interstate, sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14pt;
+        }
+      
+        &--input {
+          padding: 5px;
+          border: 2px solid $kleur-secondary;
+          border-radius: 0.15rem;
+          font-family: interstate, sans-serif;
+          font-style: normal;
+          font-weight: 100;
+          font-size: 12pt;
+          &::placeholder{
+            font-family: interstate, sans-serif;
+            font-style: italic;
+            font-weight: 100;
+            font-size: 12pt;
+          }
+        }
+      
+        &--input:hover {
+          border: 2px solid $kleur-secondary--hover;
+        }
+
+        &--aantal {
+            padding-left: 0;
+            h5 {
+                font-family: interstate, sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14pt;  
+            }
+
+            label {
+                font-family: interstate, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14pt;
+            }
+        }
+        .card-btn {
+            color: $kleur-secondary;
+          }
+          
+          .card-btn:before,
+          .card-btn:after {
+            position: absolute;
+            content: "";
+            right: 0;
+            top: 0;
+            background: $kleur-secondary;
+            transition: all 0.3s ease;
+           
+          }
+          
+          .card-btn span:before,
+          .card-btn span:after {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            background: $kleur-secondary;
+            transition: all 0.3s ease;
+          }
+        
+          .custom-btn {
+            margin-left: 0;
+            margin-bottom: 2rem;
+            font-family: interstate, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14pt;
+            background: transparent;
+            outline: none !important;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            color: $kleur-secondary;
+          }
+          
+          .btn-4 {
+            width: 130px;
+            height: 40px;
+            line-height: 42px;
+            padding: 0;
+            border: none;
+          }
+          .btn-4 span {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+          .btn-4:before,
+          .btn-4:after {
+            position: absolute;
+            content: "";
+            right: 0;
+            top: 0;
+            background: $kleur-secondary;
+            transition: all 0.3s ease;
+           
+          }
+          .btn-4:before {
+            height: 50%;
+            width: 2px;
+          
+          }
+          .btn-4:after {
+            width: 20%;
+            height: 2px;
+          }
+          .btn-4:hover:before {
+            height: 100%;
+          }
+          .btn-4:hover:after {
+            width: 100%;
+          }
+          .btn-4 span:before,
+          .btn-4 span:after {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            background: $kleur-secondary;
+            transition: all 0.3s ease;
+          }
+          .btn-4 span:before {
+            width: 2px;
+            height: 50%;
+          }
+          .btn-4 span:after {
+            width: 20%;
+            height: 2px;
+          }
+          .btn-4 span:hover:before {
+            height: 100%;
+          }
+          .btn-4 span:hover:after {
+            width: 100%;
+          }
+  }
+
+  /*contact*/
+  .c-contact {
+    color: $kleur-secondary;
+    h1 {
+        margin-top: 2rem;
+        @media only screen and (max-width: 1140px) {
+          text-align: center;
+        }
+    }
+
+      &--label {
+        margin-top: 2rem;
+        font-family: interstate, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14pt;
+      }
+    
+      &--input {
+        padding: 5px;
+        border: 2px solid $kleur-secondary;
+        border-radius: 0.15rem;
+        font-family: interstate, sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 12pt;
+        &::placeholder{
+          font-family: interstate, sans-serif;
+          font-style: italic;
+          font-weight: 100;
+          font-size: 12pt;
+        }
+      }
+    
+      &--input:hover {
+        border: 2px solid $kleur-secondary--hover;
+      }
+
+      &--textarea {
+        padding: 5px;
+        width: 100%;
+        height: 38vh;
+        border: 2px solid $kleur-secondary;
+        border-radius: 0.15rem;
+        font-family: interstate, sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 12pt;
+        &::placeholder{
+          font-family: interstate, sans-serif;
+          font-style: italic;
+          font-weight: 100;
+          font-size: 12pt;
+        }
+      }
+    
+      &--textarea:hover {
+        border: 2px solid $kleur-secondary--hover;
+      }
+
+      iframe {
+          width: 100%;
+          padding-top: 4.2rem;
+          padding-bottom: 1.6rem;
+      }
+      .card-btn {
+        color: $kleur-secondary;
+      }
+      
+      .card-btn:before,
+      .card-btn:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 0;
+        background: $kleur-secondary;
+        transition: all 0.3s ease;
+       
+      }
+      
+      .card-btn span:before,
+      .card-btn span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        background: $kleur-secondary;
+        transition: all 0.3s ease;
+      }
+    
+      .custom-btn {
+        @media screen and (max-width: 990px) {
+            margin-left: 1rem;
+        }
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+        font-family: interstate, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14pt;
+        background: transparent;
+        outline: none !important;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        color: $kleur-secondary;
+      }
+      
+      .btn-4 {
+        width: 130px;
+        height: 40px;
+        line-height: 42px;
+        padding: 0;
+        border: none;
+      }
+      .btn-4 span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      .btn-4:before,
+      .btn-4:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 0;
+        background: $kleur-secondary;
+        transition: all 0.3s ease;
+       
+      }
+      .btn-4:before {
+        height: 50%;
+        width: 2px;
+      
+      }
+      .btn-4:after {
+        width: 20%;
+        height: 2px;
+      }
+      .btn-4:hover:before {
+        height: 100%;
+      }
+      .btn-4:hover:after {
+        width: 100%;
+      }
+      .btn-4 span:before,
+      .btn-4 span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        background: $kleur-secondary;
+        transition: all 0.3s ease;
+      }
+      .btn-4 span:before {
+        width: 2px;
+        height: 50%;
+      }
+      .btn-4 span:after {
+        width: 20%;
+        height: 2px;
+      }
+      .btn-4 span:hover:before {
+        height: 100%;
+      }
+      .btn-4 span:hover:after {
+        width: 100%;
+      }
+  }
+
 /*footer*/
   footer {
     position: relative;
