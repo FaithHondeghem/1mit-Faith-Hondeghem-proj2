@@ -569,6 +569,443 @@ li.page-item a:hover {
   }
 }
 
+/*tickets*/
+.c-tickets {
+  display: inline-block;
+  color: #022329;
+}
+
+.c-tickets h1 {
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 1140px) {
+  .c-tickets h1 {
+    text-align: center;
+  }
+}
+
+.c-tickets--label {
+  margin-top: 2rem;
+  font-family: interstate, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.c-tickets--input {
+  padding: 5px;
+  border: 2px solid #022329;
+  border-radius: 0.15rem;
+  font-family: interstate, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 12pt;
+}
+
+.c-tickets--input::-webkit-input-placeholder {
+  font-family: interstate, sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 12pt;
+}
+
+.c-tickets--input:-ms-input-placeholder {
+  font-family: interstate, sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 12pt;
+}
+
+.c-tickets--input::-ms-input-placeholder {
+  font-family: interstate, sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 12pt;
+}
+
+.c-tickets--input::placeholder {
+  font-family: interstate, sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 12pt;
+}
+
+.c-tickets--input:hover {
+  border: 2px solid #63898F;
+}
+
+.c-tickets--aantal {
+  padding-left: 0;
+}
+
+.c-tickets--aantal h5 {
+  font-family: interstate, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.c-tickets--aantal label {
+  font-family: interstate, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14pt;
+}
+
+.c-tickets .card-btn {
+  color: #022329;
+}
+
+.c-tickets .card-btn:before,
+.c-tickets .card-btn:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #022329;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.c-tickets .card-btn span:before,
+.c-tickets .card-btn span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: #022329;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.c-tickets .custom-btn {
+  margin-left: 0;
+  margin-bottom: 2rem;
+  font-family: interstate, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14pt;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  color: #022329;
+}
+
+.c-tickets .btn-4 {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+.c-tickets .btn-4 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.c-tickets .btn-4:before,
+.c-tickets .btn-4:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #022329;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.c-tickets .btn-4:before {
+  height: 50%;
+  width: 2px;
+}
+
+.c-tickets .btn-4:after {
+  width: 20%;
+  height: 2px;
+}
+
+.c-tickets .btn-4:hover:before {
+  height: 100%;
+}
+
+.c-tickets .btn-4:hover:after {
+  width: 100%;
+}
+
+.c-tickets .btn-4 span:before,
+.c-tickets .btn-4 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: #022329;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.c-tickets .btn-4 span:before {
+  width: 2px;
+  height: 50%;
+}
+
+.c-tickets .btn-4 span:after {
+  width: 20%;
+  height: 2px;
+}
+
+.c-tickets .btn-4 span:hover:before {
+  height: 100%;
+}
+
+.c-tickets .btn-4 span:hover:after {
+  width: 100%;
+}
+
+/*contact*/
+.c-contact {
+  color: #022329;
+}
+
+.c-contact h1 {
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 1140px) {
+  .c-contact h1 {
+    text-align: center;
+  }
+}
+
+.c-contact--label {
+  margin-top: 2rem;
+  font-family: interstate, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.c-contact--input {
+  padding: 5px;
+  border: 2px solid #022329;
+  border-radius: 0.15rem;
+  font-family: interstate, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 12pt;
+}
+
+.c-contact--input::-webkit-input-placeholder {
+  font-family: interstate, sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 12pt;
+}
+
+.c-contact--input:-ms-input-placeholder {
+  font-family: interstate, sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 12pt;
+}
+
+.c-contact--input::-ms-input-placeholder {
+  font-family: interstate, sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 12pt;
+}
+
+.c-contact--input::placeholder {
+  font-family: interstate, sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 12pt;
+}
+
+.c-contact--input:hover {
+  border: 2px solid #63898F;
+}
+
+.c-contact--textarea {
+  padding: 5px;
+  width: 100%;
+  height: 38vh;
+  border: 2px solid #022329;
+  border-radius: 0.15rem;
+  font-family: interstate, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 12pt;
+}
+
+.c-contact--textarea::-webkit-input-placeholder {
+  font-family: interstate, sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 12pt;
+}
+
+.c-contact--textarea:-ms-input-placeholder {
+  font-family: interstate, sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 12pt;
+}
+
+.c-contact--textarea::-ms-input-placeholder {
+  font-family: interstate, sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 12pt;
+}
+
+.c-contact--textarea::placeholder {
+  font-family: interstate, sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 12pt;
+}
+
+.c-contact--textarea:hover {
+  border: 2px solid #63898F;
+}
+
+.c-contact iframe {
+  width: 100%;
+  padding-top: 4.2rem;
+  padding-bottom: 1.6rem;
+}
+
+.c-contact .card-btn {
+  color: #022329;
+}
+
+.c-contact .card-btn:before,
+.c-contact .card-btn:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #022329;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.c-contact .card-btn span:before,
+.c-contact .card-btn span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: #022329;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.c-contact .custom-btn {
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  font-family: interstate, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14pt;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  color: #022329;
+}
+
+@media screen and (max-width: 990px) {
+  .c-contact .custom-btn {
+    margin-left: 1rem;
+  }
+}
+
+.c-contact .btn-4 {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+.c-contact .btn-4 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.c-contact .btn-4:before,
+.c-contact .btn-4:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #022329;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.c-contact .btn-4:before {
+  height: 50%;
+  width: 2px;
+}
+
+.c-contact .btn-4:after {
+  width: 20%;
+  height: 2px;
+}
+
+.c-contact .btn-4:hover:before {
+  height: 100%;
+}
+
+.c-contact .btn-4:hover:after {
+  width: 100%;
+}
+
+.c-contact .btn-4 span:before,
+.c-contact .btn-4 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: #022329;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.c-contact .btn-4 span:before {
+  width: 2px;
+  height: 50%;
+}
+
+.c-contact .btn-4 span:after {
+  width: 20%;
+  height: 2px;
+}
+
+.c-contact .btn-4 span:hover:before {
+  height: 100%;
+}
+
+.c-contact .btn-4 span:hover:after {
+  width: 100%;
+}
+
 /*footer*/
 footer {
   position: relative;
