@@ -492,6 +492,12 @@ button {
   font-size: 14pt;
 }
 
+.page-item.active .page-link {
+  background: transparent;
+  border: 2px solid #022329;
+  color: #022329;
+}
+
 li.page-item {
   display: inline;
 }

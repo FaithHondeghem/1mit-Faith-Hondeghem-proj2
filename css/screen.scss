@@ -464,6 +464,11 @@ $kleur-accent--hover: #FFF0A1;
     font-size: 14pt;
      
     }
+    .page-item.active .page-link {
+      background: transparent; 
+          border: 2px solid $kleur-secondary;
+          color: $kleur-secondary;
+    }
 
     li.page-item {
         display: inline;
@@ -478,9 +483,10 @@ $kleur-accent--hover: #FFF0A1;
             border: 2px solid $kleur-secondary--hover;
             color: $kleur-secondary--hover;
         }
+      }
     }
 
-  }
+   
 
   /*spreker detail*/
   .c-sprekerdetail {

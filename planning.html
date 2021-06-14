@@ -14,6 +14,8 @@
         <link rel="icon" href="/img/logo-tabAsset2.png">
         <link rel="stylesheet" type="text/css" href="/css/screen.css"/>  
         <script src="https://kit.fontawesome.com/7f4e74808c.js" crossorigin="anonymous"></script>
+        <script src="/js/dataHandler.js"></script>
+        <script src="/js/planning.js"></script>
         <title>Multi-Mania</title>
     </head>
   <body>
@@ -54,18 +56,19 @@
       </nav>
     </header>
     <main>
-      <div class="container">
+      <div class="container js-planning">
         <table class="c-table" style="width:100%">
-          <tr>
+          <thead><tr>
             <th class="c-table--titel" colspan="12">Plaatsnaam 1</th>
-          </tr>
-            <tr class="c-table--row" onclick="window.location.href='sessie-detail.html'" >
-            <td>09u00</td>
-            <td>Naam sessie</td>
-            <td>Naam spreker</td>
-            <td><i class="fas fa-chevron-right"></i></td>
-          </tr>
-          <tr class="c-table--row" onclick="window.location.href='sessie-detail.html'">
+          </tr></thead>
+          <tbody><tr class="c-table--row" onclick="window.location.href='sessie-detail.html'" >
+            <td colspan="2">09u00</td>
+            <td colspan="4">Naam sessie</td>
+            <td colspan="4">Naam spreker</td>
+            <td colspan="2"><i class="fas fa-chevron-right"></i></td>
+          </tr></tbody>
+            
+          <!-- <tr class="c-table--row" onclick="window.location.href='sessie-detail.html'">
             <td>10u00</td>
             <td>Naam sessie</td>
             <td>Naam spreker</td>
@@ -94,50 +97,9 @@
             <td>Naam sessie</td>
             <td>Naam spreker</td>
             <td><i class="fas fa-chevron-right"></i></td>
-          </tr>
+          </tr> -->
         </table>
-        <table class="c-table" style="width:100%">
-          <tr>
-            <th class="c-table--titel" colspan="12">Plaatsnaam 1</th>
-          </tr>
-            <tr class="c-table--row" onclick="window.location.href='sessie-detail.html'">
-            <td>09u00</td>
-            <td>Naam sessie</td>
-            <td>Naam spreker</td>
-            <td><i class="fas fa-chevron-right"></i></td>
-          </tr>
-          <tr class="c-table--row" onclick="window.location.href='sessie-detail.html'">
-            <td>10u00</td>
-            <td>Naam sessie</td>
-            <td>Naam spreker</td>
-            <td><i class="fas fa-chevron-right"></i></td>
-          </tr>
-          <tr class="c-table--row" onclick="window.location.href='sessie-detail.html'">
-            <td>11u00</td>
-            <td>Naam sessie</td>
-            <td>Naam spreker</td>
-            <td><i class="fas fa-chevron-right"></i></td>
-          </tr>
-          <tr class="c-table--row" onclick="window.location.href='sessie-detail.html'">
-            <td>13u00</td>
-            <td>Naam sessie</td>
-            <td>Naam spreker</td>
-            <td><i class="fas fa-chevron-right"></i></td>
-          </tr>
-          <tr class="c-table--row" onclick="window.location.href='sessie-detail.html'">
-            <td>14u00</td>
-            <td>Naam sessie</td>
-            <td>Naam spreker</td>
-            <td><i class="fas fa-chevron-right"></i></td>
-          </tr>
-          <tr class="c-table--row" onclick="window.location.href='sessie-detail.html'">
-            <td>15u00</td>
-            <td>Naam sessie</td>
-            <td>Naam spreker</td>
-            <td><i class="fas fa-chevron-right"></i></td>
-          </tr>
-        </table>
-        <table class="c-table" style="width:100%">
+        <!-- <table class="c-table" style="width:100%">
           <tr>
             <th class="c-table--titel" colspan="12">Plaatsnaam 1</th>
           </tr>
@@ -260,6 +222,47 @@
             <td><i class="fas fa-chevron-right"></i></td>
           </tr>
         </table>
+        <table class="c-table" style="width:100%">
+          <tr>
+            <th class="c-table--titel" colspan="12">Plaatsnaam 1</th>
+          </tr>
+            <tr class="c-table--row" onclick="window.location.href='sessie-detail.html'">
+            <td>09u00</td>
+            <td>Naam sessie</td>
+            <td>Naam spreker</td>
+            <td><i class="fas fa-chevron-right"></i></td>
+          </tr>
+          <tr class="c-table--row" onclick="window.location.href='sessie-detail.html'">
+            <td>10u00</td>
+            <td>Naam sessie</td>
+            <td>Naam spreker</td>
+            <td><i class="fas fa-chevron-right"></i></td>
+          </tr>
+          <tr class="c-table--row" onclick="window.location.href='sessie-detail.html'">
+            <td>11u00</td>
+            <td>Naam sessie</td>
+            <td>Naam spreker</td>
+            <td><i class="fas fa-chevron-right"></i></td>
+          </tr>
+          <tr class="c-table--row" onclick="window.location.href='sessie-detail.html'">
+            <td>13u00</td>
+            <td>Naam sessie</td>
+            <td>Naam spreker</td>
+            <td><i class="fas fa-chevron-right"></i></td>
+          </tr>
+          <tr class="c-table--row" onclick="window.location.href='sessie-detail.html'">
+            <td>14u00</td>
+            <td>Naam sessie</td>
+            <td>Naam spreker</td>
+            <td><i class="fas fa-chevron-right"></i></td>
+          </tr>
+          <tr class="c-table--row" onclick="window.location.href='sessie-detail.html'">
+            <td>15u00</td>
+            <td>Naam sessie</td>
+            <td>Naam spreker</td>
+            <td><i class="fas fa-chevron-right"></i></td>
+          </tr>
+        </table> -->
       </div>
     </main>
     <footer>
