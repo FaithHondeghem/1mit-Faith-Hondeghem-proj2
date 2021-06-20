@@ -26,20 +26,28 @@ const getSpeakerByID = function(speakerId){
 const toonSpreker = function(data){
     let sprekerHTML = document.querySelector(".js-spreker");
     let spreker = "";
+
+    let img = "";
+    if (data.afbeelding == null){
+        img = "avatar.jpg";
+    } else {
+        img = data.afbeelding;
+    }
+
     spreker = `
     <div class="row">
         <div class="col-lg-6 col-sm-12">
-            <img src="img/${data.afbeelding}" alt="spreker">
+            <img class="c-sprekerdetail__img" src="img/${img}" alt="spreker">
             <div class="row">
                 <div class="col-3">
-                    <a style="float: left;" href="#" class="c-fb"><i class="fab fa-facebook-square"></i></a>
-                    <a style="float: left;" href="#" class="c-twitter"><i class="fab fa-twitter-square"></i></a>
+                    <a class="c-sprekerdetail__a" style="float: left;" href="#" class="c-fb"><i class="fab fa-facebook-square"></i></a>
+                    <a class="c-sprekerdetail__a" style="float: left;" href="#" class="c-twitter"><i class="fab fa-twitter-square"></i></a>
                 </div>
                 <div class="col-8">
                     <p style="float: right;">${data.love_teller} likes</p>
                 </div>
                 <div class="col-1">
-                    <button style="float: right;" class="c-like__btn" type="submit"><i class="far fa-heart"></i></button>
+                    <a class="c-sprekerdetail__a" style="float: right;" class="c-like__btn" type="submit"><i class="far fa-heart"></i></a>
                 </div>
             </div>
         </div>

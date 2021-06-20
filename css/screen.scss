@@ -200,7 +200,7 @@ $kleur-accent--hover: #FFF0A1;
   .c-over {
     padding: 2rem;
 
-    img {
+    &__img {
         width: 100%;
         padding-top: 0.5rem;
     }
@@ -211,16 +211,15 @@ $kleur-accent--hover: #FFF0A1;
     position: relative;
     padding-bottom: 3rem;
     
-    &--titel {
+    &__titel {
       padding: 1.5rem;
     }
 
-    img {
+    &__img {
         box-shadow: 0.5px 0.5px 0.5rem gray;
     }
-  }
-  
-  .text-block {
+    
+    &__text--block {
     position: absolute;
     width: 80%;
     height: 80%;
@@ -232,15 +231,17 @@ $kleur-accent--hover: #FFF0A1;
     padding-right: 20px;
     box-shadow: 0.5px 0.5px 2rem grey;
 
-    h3 {
+      &:hover {
+        background-color: rgba(224, 207, 123, 0.55);
+    cursor: pointer;
+      }
+    
+    }
+    &__h3 {
       padding-top: 55%;
     }
   }
-
-  .text-block:hover {
-    background-color: rgba(224, 207, 123, 0.55);
-    cursor: pointer;
-  }
+  
 
   /*sorteerbalk*/
   .c-sort {
@@ -283,7 +284,7 @@ $kleur-accent--hover: #FFF0A1;
 
   /*speakercard*/
 
-  .card {
+  .c-card {
     margin-top: 2rem;
     margin-bottom: 2rem;
     box-shadow: 2px 5px 1rem black;
@@ -295,43 +296,44 @@ $kleur-accent--hover: #FFF0A1;
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
-  }
-  
-  .card-img-top {
-    width: 20rem;
-    border-radius: 0.5rem;
-  }
-  
-  .card-block__text {
-    position: absolute;
-    width: 80%;
-    height: 36%;
-    bottom: 55%;
-    right: 10%;
-    border-radius: 0.5rem;
-    background-color: rgba(224, 207, 123, 0.35);
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-shadow: 0.5px 0.5px 1rem gray;
-  }
-  
-  
-  .card-text {
-    text-align: left;
-    padding-top: 2rem;
-    font-family: interstate, sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 12pt;
-  }
 
-  .card-p {
-    padding-top: 2rem;
-    font-family: interstate, sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 14pt;
+    &__img--top {
+      max-width: 20rem;
+      max-height: 13.5rem;
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+
+    &__block--text {
+      position: absolute;
+      width: 80%;
+      height: 30%;
+      bottom: 62%;
+      right: 10%;
+      border-radius: 0.5rem;
+      background-color: rgba(224, 207, 123, 0.35);
+      color: white;
+      padding-left: 20px;
+      padding-right: 20px;
+      box-shadow: 0.5px 0.5px 1rem gray;
+    }
+
+    &__text {
+      text-align: left;
+      padding-top: 2rem;
+      font-family: interstate, sans-serif;
+      font-style: normal;
+      font-weight: 100;
+      font-size: 12pt;
+    }
+
+    &__p {
+      padding-top: 2rem;
+      font-family: interstate, sans-serif;
+      font-style: normal;
+      font-weight: 100;
+      font-size: 14pt;
+    }
   }
   
   .inline {
@@ -490,44 +492,26 @@ $kleur-accent--hover: #FFF0A1;
   .c-sprekerdetail {
       margin-top: 5rem;
       margin-bottom: 5rem;
-      img {
+      &__img {
           width: 100%;
       }
-      h4 {
-          padding-top: 2rem;
-      }
-      p {
-          padding-top: 1.5rem;
-      }
-      a {
+      &__a {
           color: $kleur-secondary;
           padding: 0.2rem;
           &:hover {
               color: $kleur-secondary--hover;
           }
       }
-      button {
-          color: $kleur-secondary;
-          margin: 0;
-          padding-top: 0.5rem;
-      }
   }
 
   /*session detail*/
   .c-sessiondetail {
     margin-top: 5rem;
-    img {
+    &__img {
         width: 100%;
         margin-bottom: 2rem;
     }
-    h3 {
-        padding-top: 1rem;
-    }
-    h5 {
-        padding-top: 3rem;
-    }
-
-    a {
+    &__a {
         color: $kleur-secondary;
         padding-top: 0;
         padding-left: 0.2rem;
@@ -544,7 +528,7 @@ $kleur-accent--hover: #FFF0A1;
       margin-bottom: 2rem;
       box-shadow: 5px 5px 1rem #f0f0f0;
 
-      &--titel {
+      &__titel {
           background-color: $kleur-secondary;
           padding: 1.5rem 1.5rem 1.5rem 1rem;
           font-family: montserrat, sans-serif;
@@ -554,7 +538,7 @@ $kleur-accent--hover: #FFF0A1;
           color: white;
       }
 
-      &--row {
+      &__row {
           cursor: pointer;
           font-family: interstate, sans-serif;
           font-style: normal;
@@ -590,24 +574,13 @@ $kleur-accent--hover: #FFF0A1;
   /*sponsors*/
   .c-sponsor {
       margin-bottom: 4rem;
-      h1 {
-          margin: 1rem;
-      }
-
-      h2 {
-          margin-top: 4rem;
-          margin-bottom: 2rem;
-          @media only screen and (max-width: 1140px) {
-              text-align: center;
-          }
-      }
-
-      &--img {
+      
+      &__img {
           padding-top: 2rem;
       }
 
       @media only screen and (max-width: 1140px) {
-          &--img {
+          &__img {
               padding-top: 2rem;
               padding-bottom: 2rem;
           }
@@ -618,18 +591,18 @@ $kleur-accent--hover: #FFF0A1;
   .c-tickets {
       display: inline-block;
       color: $kleur-secondary;
-      h1 {
+      &__h1 {
           margin-top: 2rem;
           @media only screen and (max-width: 1140px) {
             text-align: center;
           }
       }
-        &--img {
+        &__img {
             padding: 2rem;
             width: 100%;
         }
 
-        &--label {
+        &__label {
           margin-top: 2rem;
           font-family: interstate, sans-serif;
           font-style: normal;
@@ -637,7 +610,7 @@ $kleur-accent--hover: #FFF0A1;
           font-size: 14pt;
         }
       
-        &--input {
+        &__input {
           padding: 5px;
           border: 2px solid $kleur-secondary;
           border-radius: 0.15rem;
@@ -653,11 +626,11 @@ $kleur-accent--hover: #FFF0A1;
           }
         }
       
-        &--input:hover {
+        &__input:hover {
           border: 2px solid $kleur-secondary--hover;
         }
 
-        &--aantal {
+        &__aantal {
             padding-left: 0;
             h5 {
                 font-family: interstate, sans-serif;
@@ -777,19 +750,17 @@ $kleur-accent--hover: #FFF0A1;
           }
   }
 
-  /*tabel*/
-
   /*contact*/
   .c-contact {
     color: $kleur-secondary;
-    h1 {
+    &__h1 {
         margin-top: 2rem;
         @media only screen and (max-width: 1140px) {
           text-align: center;
         }
     }
 
-      &--label {
+      &__label {
         margin-top: 2rem;
         font-family: interstate, sans-serif;
         font-style: normal;
@@ -797,7 +768,7 @@ $kleur-accent--hover: #FFF0A1;
         font-size: 14pt;
       }
     
-      &--input {
+      &__input {
         width: 100%;
         padding: 5px;
         border: 2px solid $kleur-secondary;
@@ -814,11 +785,11 @@ $kleur-accent--hover: #FFF0A1;
         }
       }
     
-      &--input:hover {
+      &__input:hover {
         border: 2px solid $kleur-secondary--hover;
       }
 
-      &--textarea {
+      &__textarea {
         padding: 5px;
         width: 100%;
         height: 38vh;
@@ -836,7 +807,7 @@ $kleur-accent--hover: #FFF0A1;
         }
       }
     
-      &--textarea:hover {
+      &__textarea:hover {
         border: 2px solid $kleur-secondary--hover;
       }
 

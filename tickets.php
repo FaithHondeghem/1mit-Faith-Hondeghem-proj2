@@ -63,7 +63,7 @@ require_once dirname(__FILE__)."/src/helper/debug.php";
         <div class="row">
           <div class="col-lg-6 col-sm-12">
             <div class="c-tickets">
-              <h1>Bestel hier uw tickets.</h1>
+              <h1 class="c-tickets__h1">Bestel hier uw tickets.</h1>
               <form action="ticket-verwerk.php" method="POST" class="c-tickets">
                 <div class="row">
                   <div class="col-lg-6 col-sm-12">

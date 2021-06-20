@@ -17,6 +17,11 @@ class TicketRepository {
         $int = Database::execute("DELETE FROM tickets WHERE ticketid = ?", [$particketid]);
         return $int;
     }
+
+    public static function updateTicket($particket) {
+        $int = Database::execute("UPDATE tickets SET ticketid = ?, naam = ?, voornaam = ?, postcode = ?, email = ?, earlybird = ?, regular = ?, student = ?, vip = ?, besteldop = ? WHERE ticketid = ?", [$particket->ticketid, $particket->naam, $particket->voornaam, $particket->postcode, $particket->email, $particket->earlybird, $particket->regular, $particket->student, $particket->vip, $particket->besteldop, $particket->particketid]);
+        return $int;
+    }
 }
 
 ?>

@@ -26,17 +26,25 @@ const getSessieByID = function(sessionId){
 const toonSessie = function(data){
     let sessieHTML = document.querySelector(".js-sessie");
     let sessie = "";
+
+    let img = "";
+    if (data.spreker.afbeelding == null){
+        img = "img/avatar.jpg";
+    } else {
+        img = `img/${data.spreker.afbeelding}`;
+    }
+
     sessie = `<div class="col-lg-6 col-sm-12">
     <h1>${data.titel}</h1>
     <h3>${data.spreker.voornaam} ${data.spreker.familienaam}</h3>
     <h5>${data.zaal.omschrijving}, ${data.start}</h5>
     <p>${data.omschrijving.nl}</p>
-    <a style="float: left;" href="#" class="c-fb"><i class="fab fa-facebook-square"></i></a>
-    <a style="float: left;" href="#" class="c-twitter"><i class="fab fa-twitter-square"></i></a>
-</div>
-<div class="col-lg-6 col-sm-12">
-    <img src="/img/${data.spreker.afbeelding}" alt="spreker">
-</div>`;
+    <a class="c-sessiondetail__a" style="float: left;" href="#" class="c-fb"><i class="fab fa-facebook-square"></i></a>
+    <a class="c-sessiondetail__a" style="float: left;" href="#" class="c-twitter"><i class="fab fa-twitter-square"></i></a>
+    </div>
+    <div class="col-lg-6 col-sm-12">
+        <img class="c-sessiondetail__img" src="${img}" alt="spreker">
+    </div>`;
 
     sessieHTML.innerHTML = sessie;
 };
