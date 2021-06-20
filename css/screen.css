@@ -212,7 +212,7 @@ p {
   padding: 2rem;
 }
 
-.c-over img {
+.c-over__img {
   width: 100%;
   padding-top: 0.5rem;
 }
@@ -223,16 +223,16 @@ p {
   padding-bottom: 3rem;
 }
 
-.c-enkelesprekers--titel {
+.c-enkelesprekers__titel {
   padding: 1.5rem;
 }
 
-.c-enkelesprekers img {
+.c-enkelesprekers__img {
   -webkit-box-shadow: 0.5px 0.5px 0.5rem gray;
           box-shadow: 0.5px 0.5px 0.5rem gray;
 }
 
-.text-block {
+.c-enkelesprekers__text--block {
   position: absolute;
   width: 80%;
   height: 80%;
@@ -246,13 +246,13 @@ p {
           box-shadow: 0.5px 0.5px 2rem grey;
 }
 
-.text-block h3 {
-  padding-top: 55%;
-}
-
-.text-block:hover {
+.c-enkelesprekers__text--block:hover {
   background-color: rgba(224, 207, 123, 0.55);
   cursor: pointer;
+}
+
+.c-enkelesprekers__h3 {
+  padding-top: 55%;
 }
 
 /*sorteerbalk*/
@@ -295,7 +295,7 @@ p {
 }
 
 /*speakercard*/
-.card {
+.c-card {
   margin-top: 2rem;
   margin-bottom: 2rem;
   -webkit-box-shadow: 2px 5px 1rem black;
@@ -305,23 +305,26 @@ p {
 }
 
 @media only screen and (max-width: 767px) {
-  .card {
+  .c-card {
     margin: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
 }
 
-.card-img-top {
-  width: 20rem;
+.c-card__img--top {
+  max-width: 20rem;
+  max-height: 13.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0.5rem;
 }
 
-.card-block__text {
+.c-card__block--text {
   position: absolute;
   width: 80%;
-  height: 36%;
-  bottom: 55%;
+  height: 30%;
+  bottom: 62%;
   right: 10%;
   border-radius: 0.5rem;
   background-color: rgba(224, 207, 123, 0.35);
@@ -332,7 +335,7 @@ p {
           box-shadow: 0.5px 0.5px 1rem gray;
 }
 
-.card-text {
+.c-card__text {
   text-align: left;
   padding-top: 2rem;
   font-family: interstate, sans-serif;
@@ -341,7 +344,7 @@ p {
   font-size: 12pt;
 }
 
-.card-p {
+.c-card__p {
   padding-top: 2rem;
   font-family: interstate, sans-serif;
   font-style: normal;
@@ -519,33 +522,20 @@ li.page-item a:hover {
 /*spreker detail*/
 .c-sprekerdetail {
   margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
-.c-sprekerdetail img {
+.c-sprekerdetail__img {
   width: 100%;
 }
 
-.c-sprekerdetail h4 {
-  padding-top: 2rem;
-}
-
-.c-sprekerdetail p {
-  padding-top: 1.5rem;
-}
-
-.c-sprekerdetail a {
+.c-sprekerdetail__a {
   color: #022329;
   padding: 0.2rem;
 }
 
-.c-sprekerdetail a:hover {
+.c-sprekerdetail__a:hover {
   color: #63898F;
-}
-
-.c-sprekerdetail button {
-  color: #022329;
-  margin: 0;
-  padding-top: 0.5rem;
 }
 
 /*session detail*/
@@ -553,26 +543,18 @@ li.page-item a:hover {
   margin-top: 5rem;
 }
 
-.c-sessiondetail img {
+.c-sessiondetail__img {
   width: 100%;
   margin-bottom: 2rem;
 }
 
-.c-sessiondetail h3 {
-  padding-top: 1rem;
-}
-
-.c-sessiondetail h5 {
-  padding-top: 3rem;
-}
-
-.c-sessiondetail a {
+.c-sessiondetail__a {
   color: #022329;
   padding-top: 0;
   padding-left: 0.2rem;
 }
 
-.c-sessiondetail a:hover {
+.c-sessiondetail__a:hover {
   color: #63898F;
 }
 
@@ -585,10 +567,9 @@ li.page-item a:hover {
           box-shadow: 5px 5px 1rem #f0f0f0;
 }
 
-.c-table--titel {
+.c-table__titel {
   background-color: #022329;
-  padding: 1.5rem;
-  padding-left: 1rem;
+  padding: 1.5rem 1.5rem 1.5rem 1rem;
   font-family: montserrat, sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -596,7 +577,7 @@ li.page-item a:hover {
   color: white;
 }
 
-.c-table--row {
+.c-table__row {
   cursor: pointer;
   font-family: interstate, sans-serif;
   font-style: normal;
@@ -604,7 +585,7 @@ li.page-item a:hover {
   font-size: 14pt;
 }
 
-.c-table--row:hover {
+.c-table__row:hover {
   background-color: rgba(98, 136, 141, 0.5);
   color: white;
 }
@@ -618,32 +599,29 @@ li.page-item a:hover {
   color: white;
 }
 
+.c-table__edit--btn {
+  border: 1px solid #022329;
+  padding: 15px 30px;
+  text-align: center;
+  font-family: interstate, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14pt;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 /*sponsors*/
 .c-sponsor {
   margin-bottom: 4rem;
 }
 
-.c-sponsor h1 {
-  margin: 1rem;
-}
-
-.c-sponsor h2 {
-  margin-top: 4rem;
-  margin-bottom: 2rem;
-}
-
-@media only screen and (max-width: 1140px) {
-  .c-sponsor h2 {
-    text-align: center;
-  }
-}
-
-.c-sponsor--img {
+.c-sponsor__img {
   padding-top: 2rem;
 }
 
 @media only screen and (max-width: 1140px) {
-  .c-sponsor--img {
+  .c-sponsor__img {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
@@ -655,22 +633,22 @@ li.page-item a:hover {
   color: #022329;
 }
 
-.c-tickets h1 {
+.c-tickets__h1 {
   margin-top: 2rem;
 }
 
 @media only screen and (max-width: 1140px) {
-  .c-tickets h1 {
+  .c-tickets__h1 {
     text-align: center;
   }
 }
 
-.c-tickets--img {
+.c-tickets__img {
   padding: 2rem;
   width: 100%;
 }
 
-.c-tickets--label {
+.c-tickets__label {
   margin-top: 2rem;
   font-family: interstate, sans-serif;
   font-style: normal;
@@ -678,7 +656,7 @@ li.page-item a:hover {
   font-size: 14pt;
 }
 
-.c-tickets--input {
+.c-tickets__input {
   padding: 5px;
   border: 2px solid #022329;
   border-radius: 0.15rem;
@@ -688,50 +666,50 @@ li.page-item a:hover {
   font-size: 12pt;
 }
 
-.c-tickets--input::-webkit-input-placeholder {
+.c-tickets__input::-webkit-input-placeholder {
   font-family: interstate, sans-serif;
   font-style: italic;
   font-weight: 100;
   font-size: 12pt;
 }
 
-.c-tickets--input:-ms-input-placeholder {
+.c-tickets__input:-ms-input-placeholder {
   font-family: interstate, sans-serif;
   font-style: italic;
   font-weight: 100;
   font-size: 12pt;
 }
 
-.c-tickets--input::-ms-input-placeholder {
+.c-tickets__input::-ms-input-placeholder {
   font-family: interstate, sans-serif;
   font-style: italic;
   font-weight: 100;
   font-size: 12pt;
 }
 
-.c-tickets--input::placeholder {
+.c-tickets__input::placeholder {
   font-family: interstate, sans-serif;
   font-style: italic;
   font-weight: 100;
   font-size: 12pt;
 }
 
-.c-tickets--input:hover {
+.c-tickets__input:hover {
   border: 2px solid #63898F;
 }
 
-.c-tickets--aantal {
+.c-tickets__aantal {
   padding-left: 0;
 }
 
-.c-tickets--aantal h5 {
+.c-tickets__aantal h5 {
   font-family: interstate, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14pt;
 }
 
-.c-tickets--aantal label {
+.c-tickets__aantal label {
   font-family: interstate, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -859,17 +837,17 @@ li.page-item a:hover {
   color: #022329;
 }
 
-.c-contact h1 {
+.c-contact__h1 {
   margin-top: 2rem;
 }
 
 @media only screen and (max-width: 1140px) {
-  .c-contact h1 {
+  .c-contact__h1 {
     text-align: center;
   }
 }
 
-.c-contact--label {
+.c-contact__label {
   margin-top: 2rem;
   font-family: interstate, sans-serif;
   font-style: normal;
@@ -877,7 +855,7 @@ li.page-item a:hover {
   font-size: 14pt;
 }
 
-.c-contact--input {
+.c-contact__input {
   width: 100%;
   padding: 5px;
   border: 2px solid #022329;
@@ -888,39 +866,39 @@ li.page-item a:hover {
   font-size: 12pt;
 }
 
-.c-contact--input::-webkit-input-placeholder {
+.c-contact__input::-webkit-input-placeholder {
   font-family: interstate, sans-serif;
   font-style: italic;
   font-weight: 100;
   font-size: 12pt;
 }
 
-.c-contact--input:-ms-input-placeholder {
+.c-contact__input:-ms-input-placeholder {
   font-family: interstate, sans-serif;
   font-style: italic;
   font-weight: 100;
   font-size: 12pt;
 }
 
-.c-contact--input::-ms-input-placeholder {
+.c-contact__input::-ms-input-placeholder {
   font-family: interstate, sans-serif;
   font-style: italic;
   font-weight: 100;
   font-size: 12pt;
 }
 
-.c-contact--input::placeholder {
+.c-contact__input::placeholder {
   font-family: interstate, sans-serif;
   font-style: italic;
   font-weight: 100;
   font-size: 12pt;
 }
 
-.c-contact--input:hover {
+.c-contact__input:hover {
   border: 2px solid #63898F;
 }
 
-.c-contact--textarea {
+.c-contact__textarea {
   padding: 5px;
   width: 100%;
   height: 38vh;
@@ -932,35 +910,35 @@ li.page-item a:hover {
   font-size: 12pt;
 }
 
-.c-contact--textarea::-webkit-input-placeholder {
+.c-contact__textarea::-webkit-input-placeholder {
   font-family: interstate, sans-serif;
   font-style: italic;
   font-weight: 100;
   font-size: 12pt;
 }
 
-.c-contact--textarea:-ms-input-placeholder {
+.c-contact__textarea:-ms-input-placeholder {
   font-family: interstate, sans-serif;
   font-style: italic;
   font-weight: 100;
   font-size: 12pt;
 }
 
-.c-contact--textarea::-ms-input-placeholder {
+.c-contact__textarea::-ms-input-placeholder {
   font-family: interstate, sans-serif;
   font-style: italic;
   font-weight: 100;
   font-size: 12pt;
 }
 
-.c-contact--textarea::placeholder {
+.c-contact__textarea::placeholder {
   font-family: interstate, sans-serif;
   font-style: italic;
   font-weight: 100;
   font-size: 12pt;
 }
 
-.c-contact--textarea:hover {
+.c-contact__textarea:hover {
   border: 2px solid #63898F;
 }
 
