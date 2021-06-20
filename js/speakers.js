@@ -34,11 +34,10 @@ const toonSpeakers = function(api){
             bio = data.data[i].bio.nl;
         }
 
-        console.log("Hallo");
         speakers += `<div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card" style="width: 22.5rem;">
             <div class="card-body">
-                <img class="card-img-top" src="/img/${img}" alt="Card image cap">
+                <img class="card-img-top" src="img/${img}" alt="Card image cap">
                 <h3 class="card-block__text">${data.data[i].voornaam} ${data.data[i].familienaam}</h3>
                 <p class="card-text">${bio}</p>
                 <a href="" style="float:left;" class="c-like__btn inline"><i id=${data.data[i].id} class="far fa-heart js-like"></i></a>

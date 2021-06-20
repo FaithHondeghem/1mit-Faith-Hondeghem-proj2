@@ -29,7 +29,7 @@ const toonSpreker = function(data){
     spreker = `
     <div class="row">
         <div class="col-lg-6 col-sm-12">
-            <img src="/img/${data.afbeelding}" alt="spreker">
+            <img src="img/${data.afbeelding}" alt="spreker">
             <div class="row">
                 <div class="col-3">
                     <a style="float: left;" href="#" class="c-fb"><i class="fab fa-facebook-square"></i></a>

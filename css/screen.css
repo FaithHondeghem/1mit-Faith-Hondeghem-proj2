@@ -519,6 +519,7 @@ li.page-item a:hover {
 /*spreker detail*/
 .c-sprekerdetail {
   margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .c-sprekerdetail img {
@@ -587,8 +588,7 @@ li.page-item a:hover {
 
 .c-table--titel {
   background-color: #022329;
-  padding: 1.5rem;
-  padding-left: 1rem;
+  padding: 1.5rem 1.5rem 1.5rem 1rem;
   font-family: montserrat, sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -616,6 +616,18 @@ li.page-item a:hover {
 .c-table--row:nth-child(even):hover {
   background-color: rgba(98, 136, 141, 0.5);
   color: white;
+}
+
+.c-table__edit--btn {
+  border: 1px solid #022329;
+  padding: 15px 30px;
+  text-align: center;
+  font-family: interstate, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14pt;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 /*sponsors*/
@@ -854,6 +866,7 @@ li.page-item a:hover {
   width: 100%;
 }
 
+/*tabel*/
 /*contact*/
 .c-contact {
   color: #022329;
